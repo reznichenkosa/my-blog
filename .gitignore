@@ -1,4 +1,4 @@
-dist
+/dist/
+/build/
 .DS_Store
-build
-node_modules
+/node_modules
