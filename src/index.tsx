@@ -1,4 +1,10 @@
 import { render } from "react-dom";
-import { Counter } from "./components/Counter";
+import Counter from "./components/Counter/Counter";
+import "./index.css";
 
-render(<div>test</div>, document.getElementById("root"));
+render(
+  <div className="wrapper">
+    <Counter />
+  </div>,
+  document.getElementById("root")
+);
