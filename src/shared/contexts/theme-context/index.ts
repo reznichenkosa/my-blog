@@ -1,2 +1,2 @@
 export { useTheme } from "./useTheme";
-export { ThemeContext, Theme, LOCAL_STORAGE_THEME_KEY } from "./theme-context";
+export { ThemeContext, type Theme, LOCAL_STORAGE_THEME_KEY } from "./theme-context";
