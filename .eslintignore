@@ -5,3 +5,4 @@
 .eslintrc.js
 .vscode
 /public/
+jest.config.ts

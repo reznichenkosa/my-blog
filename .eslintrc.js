@@ -11,6 +11,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'prettier',
+    'plugin:i18next/recommended',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -33,7 +34,7 @@ module.exports = {
       },
     },
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier', 'i18next'],
   rules: {
     camelcase: 'error',
     quotes: ['error', 'single'],

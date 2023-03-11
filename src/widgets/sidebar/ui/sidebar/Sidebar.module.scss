@@ -1,27 +1,24 @@
 .wrapper {
-  height: calc(100vh - var(--navbar-height));
-  width: var(--sidebar-width);
-  transition: width 300ms ease-in-out;
-  background: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-height));
   padding: 20px;
+  background: var(--secondary-color);
+  transition: width 300ms ease-in-out;
 
-  .collapseBtn {
+  .collapse-btn {
     display: flex;
     justify-content: flex-end;
 
     .icon {
       width: 30px;
       height: 30px;
-      stroke-width: 1.5;
-      fill: var(--primary-color);
       color: var(--primary-color);
+      fill: var(--primary-color);
+      stroke-width: 1.5;
     }
-  }
-
-  .content {
   }
 
   .switchers {

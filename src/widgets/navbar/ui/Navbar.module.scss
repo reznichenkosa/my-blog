@@ -1,15 +1,15 @@
 .wrapper {
-  width: 100%;
-  height: var(--navbar-height);
-  background: var(--secondary-color);
   display: flex;
   align-items: center;
+  width: 100%;
+  height: var(--navbar-height);
   padding: 0 20px;
+  background: var(--secondary-color);
 
   .links {
     display: flex;
     flex-grow: 1;
-    justify-content: flex-end;
     gap: 15px;
+    justify-content: flex-end;
   }
 }

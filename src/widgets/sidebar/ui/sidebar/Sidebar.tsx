@@ -15,7 +15,7 @@ export const Sidebar: FC = () => {
 
   return (
     <div className={cn(styles.wrapper, { [styles.collapsed]: isCollapsed })}>
-      <div className={styles.collapseBtn}>
+      <div className={styles['collapse-btn']}>
         <Button onClick={onToggle}>
           <BarIcon className={styles.icon} />
         </Button>
