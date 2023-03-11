@@ -2,6 +2,7 @@ import { AboutPage } from "pages/AboutPage";
 import { MainPage } from "pages/MainPage";
 import { Suspense } from "react";
 import { Link, Route, Routes } from "react-router-dom";
+import { classNames } from "shared";
 import { useTheme } from "shared/contexts/theme/useTheme";
 import "./styles/index.scss";
 
@@ -9,7 +10,7 @@ export const App = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames("app", {}, [theme])}>
       <Link to="/">Main</Link>
       <Link to="/about">About</Link>
       <button onClick={toggleTheme}>Toggle theme</button>
