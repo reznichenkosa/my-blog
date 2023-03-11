@@ -8,7 +8,17 @@
   font: var(--font-m);
 
   background: var(--bg-color);
-  color: var(--primary-color);
+  color: var(--font-color);
 
   min-height: 100vh;
+}
+
+.content-page {
+  display: flex;
+  gap: 20px;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  padding: 20px;
 }

@@ -1,0 +1,28 @@
+.wrapper {
+  height: calc(100vh - var(--navbar-height));
+  width: var(--sidebar-width);
+  transition: width 300ms ease-in-out;
+  background: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+
+  .content {
+    .icon {
+      width: 30px;
+      height: 30px;
+      stroke-width: 1.5;
+      fill: var(--primary-color);
+      color: var(--primary-color);
+    }
+  }
+
+  .switchers {
+    display: flex;
+  }
+}
+
+.collapsed {
+  width: var(--sidebar-collapsed-width);
+}
