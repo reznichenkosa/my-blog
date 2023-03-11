@@ -1,0 +1,14 @@
+.language {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--font-color);
+  text-transform: uppercase;
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    stroke-width: 1.5;
+    color: var(--primary-color);
+  }
+}
