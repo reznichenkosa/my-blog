@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "npx webpack serve --env port=3000 --env mode=development",
+    "dev": "npx webpack serve --env port=3000 --env mode=development",
     "build:dev": "npx webpack --env mode=development",
     "build:prod": "npx webpack --env mode=production"
   },
   "author": "Reznichenko Sergey",
   "license": "ISC",
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
@@ -30,6 +31,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0"

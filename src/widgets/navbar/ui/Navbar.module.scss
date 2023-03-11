@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  .links {
+    display: flex;
+    gap: 15px;
+  }
+}

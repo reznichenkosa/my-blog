@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    stroke-width: 1;
+    fill: var(--primary-color);
+    color: var(--primary-color);
+  }
+}
