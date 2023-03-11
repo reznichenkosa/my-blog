@@ -1,21 +1,21 @@
-import { useState } from "react";
-import { Button } from "shared/ui/button";
-import styles from "./Sidebar.module.scss";
-import cn from "classnames";
-import { ThemeSwitcher } from "features/theme-switcher";
-import BarIcon from "shared/assets/icons/bar.svg";
-import { LangSwitcher } from "features/lang-switcher";
+import { type FC, useState } from 'react'
+import { Button } from 'shared/ui/button'
+import styles from './Sidebar.module.scss'
+import cn from 'classnames'
+import { ThemeSwitcher } from 'features/theme-switcher'
+import BarIcon from 'shared/assets/icons/bar.svg'
+import { LangSwitcher } from 'features/lang-switcher'
 
-export const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+export const Sidebar: FC = () => {
+  const [isCollapsed, setIsCollapsed] = useState(false)
 
-  const onToggle = () => {
-    setIsCollapsed((prevValue) => !prevValue);
-  };
+  const onToggle = (): void => {
+    setIsCollapsed((prevValue) => !prevValue)
+  }
 
   return (
     <div className={cn(styles.wrapper, { [styles.collapsed]: isCollapsed })}>
-      <div className={styles.collapseBtn}>
+      <div className={styles['collapse-btn']}>
         <Button onClick={onToggle}>
           <BarIcon className={styles.icon} />
         </Button>
@@ -26,5 +26,5 @@ export const Sidebar = () => {
         <LangSwitcher />
       </div>
     </div>
-  );
-};
+  )
+}
