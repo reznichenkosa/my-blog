@@ -16,5 +16,5 @@
     "description.part2_whatever"
   ],
   "i18n-ally.sourceLanguage": "en",
-  // "i18n-ally.defaultNamespace": "translation"
+  "i18n-ally.defaultNamespace": "translation"
 }

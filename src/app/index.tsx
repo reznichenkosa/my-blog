@@ -5,13 +5,14 @@ import cn from 'classnames'
 import './styles/index.scss'
 import { Sidebar } from 'widgets/sidebar'
 import { type FC, Suspense } from 'react'
+import { Loader } from 'shared/ui/loader'
 
 export const App: FC = () => {
   const { theme } = useTheme()
 
   return (
     <div className={cn('app', theme)}>
-      <Suspense fallback={<div>Languages loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Navbar />
         <div className='content-page'>
           <Sidebar />
