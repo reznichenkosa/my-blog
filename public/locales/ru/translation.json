@@ -1,4 +1,6 @@
 {
   "mainLink": "Главная",
-  "notFoundPage": "Страница не найдена"
+  "notFoundPage": "Страница не найдена",
+  "somethingWentWrong": "Что то пошло не так!",
+  "reloadPage": "Перезагрузить страницу"
 }

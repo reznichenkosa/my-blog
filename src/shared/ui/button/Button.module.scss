@@ -4,4 +4,10 @@
   cursor: pointer;
   background: transparent;
   border: none;
+  border-radius: 5px;
+}
+
+.primary {
+  color: var(--bg-color);
+  background: var(--secondary-color);
 }

@@ -1,11 +1,11 @@
+import { type FC, Suspense, useEffect } from 'react'
 import { useTheme } from 'shared/contexts/theme-context'
 import { Navbar } from 'widgets/navbar'
 import { AppRouter } from './providers/router'
+import { Sidebar } from 'widgets/sidebar'
+import { Loader } from 'shared/ui/loader'
 import cn from 'classnames'
 import './styles/index.scss'
-import { Sidebar } from 'widgets/sidebar'
-import { type FC, Suspense } from 'react'
-import { Loader } from 'shared/ui/loader'
 
 export const App: FC = () => {
   const { theme } = useTheme()
