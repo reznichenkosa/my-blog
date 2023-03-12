@@ -1,4 +1,4 @@
-import { type FC, Suspense, useEffect } from 'react'
+import { type FC, Suspense } from 'react'
 import { useTheme } from 'shared/contexts/theme-context'
 import { Navbar } from 'widgets/navbar'
 import { AppRouter } from './providers/router'
