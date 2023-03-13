@@ -16,6 +16,8 @@ export function buildPlugins(options: BuildOptions): WebpackPluginInstance[] {
     ? [new HotModuleReplacementPlugin(), new ReactRefreshWebpackPlugin()]
     : []
 
+  const bundleAnalyzerPlugin = isDev ? [new BundleAnalyzerPlugin({ openAnalyzer: false })] : []
+
   return [
     new ProgressPlugin(),
     new HtmlWebpackPlugin({ template: paths.html }),
@@ -28,5 +30,6 @@ export function buildPlugins(options: BuildOptions): WebpackPluginInstance[] {
     }),
     new BundleAnalyzerPlugin({ openAnalyzer: false }),
     ...hotReloadPlugins,
+    ...bundleAnalyzerPlugin,
   ]
 }
