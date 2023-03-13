@@ -5,7 +5,7 @@ import { type FC } from 'react'
 import { useTranslation } from 'react-i18next'
 
 export const Navbar: FC = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation('translation')
   return (
     <div className={cn(styles.wrapper)}>
       <div className={styles.links}>

@@ -2,5 +2,6 @@
   "mainLink": "Главная",
   "notFoundPage": "Страница не найдена",
   "somethingWentWrong": "Что то пошло не так!",
-  "reloadPage": "Перезагрузить страницу"
+  "reloadPage": "Перезагрузить страницу",
+  "aboutLink": "О нас"
 }

@@ -1,1 +1,1 @@
-export { AppError } from './ui/AppError'
+export { AppError } from './AppError'
