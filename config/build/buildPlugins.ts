@@ -28,7 +28,6 @@ export function buildPlugins(options: BuildOptions): WebpackPluginInstance[] {
     new DefinePlugin({
       IS_DEV: JSON.stringify(isDev),
     }),
-    new BundleAnalyzerPlugin({ openAnalyzer: false }),
     ...hotReloadPlugins,
     ...bundleAnalyzerPlugin,
   ]
