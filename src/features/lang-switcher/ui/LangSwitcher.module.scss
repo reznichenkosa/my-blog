@@ -1,14 +1,15 @@
 .language {
   display: flex;
-  gap: 5px;
+  flex-wrap: wrap;
+  gap: 2px;
   align-items: center;
-  color: var(--font-color);
+  justify-content: center;
   text-transform: uppercase;
 
   .icon {
     width: 30px;
     height: 30px;
-    color: var(--primary-color);
+    color: inherit;
     stroke-width: 1.5;
   }
 }

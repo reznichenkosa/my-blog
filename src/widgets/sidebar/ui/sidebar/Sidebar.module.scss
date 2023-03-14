@@ -1,23 +1,51 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
   width: var(--sidebar-width);
   height: calc(100vh - var(--navbar-height));
   padding: 20px;
   background: var(--secondary-color);
-  transition: width 300ms ease-in-out;
+  transition: width var(--transition-duration) ease-in-out;
 
   .collapse-btn {
     display: flex;
     justify-content: flex-end;
+  }
 
-    .icon {
-      width: 30px;
-      height: 30px;
-      color: var(--primary-color);
-      fill: var(--primary-color);
-      stroke-width: 1.5;
+  .collapse-btn-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    color: inherit;
+    stroke-width: 1.5;
+  }
+
+  .content {
+    flex: 1 1 auto;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 15px;
+
+      .link-wrapper {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        overflow: hidden;
+      }
+    }
+
+    .links-center {
+      display: flex;
+      justify-content: center;
     }
   }
 

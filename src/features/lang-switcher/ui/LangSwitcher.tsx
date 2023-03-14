@@ -13,7 +13,7 @@ export const LangSwitcher: FC = () => {
   const currentLang = i18n.language
 
   return (
-    <Button onClick={toggleLang}>
+    <Button onClick={toggleLang} variant='success'>
       <div className={styles.language}>
         <LangIcon className={styles.icon} />
         <span>{currentLang}</span>
