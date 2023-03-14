@@ -9,5 +9,38 @@
   // ui-kit color
 
   // AppLink
+
   --link-color: #03c988;
+
+  // Button
+
+  // variant: ghost
+  --button-ghost-color: #03c988;
+  --button-ghost-bg-color: #1c82ad;
+  --button-ghost-hover-bg-color: #1c82ad;
+  --button-ghost-hover-color: #03c988;
+
+  // variant: primary
+  --button-primary-color: #03c988;
+  --button-primary-bg-color: #1c82ad;
+  --button-primary-hover-bg-color: #1c82ad;
+  --button-primary-hover-color: #03c988;
+
+  // variant: outline
+  --button-outline-color: #03c988;
+  --button-outline-border-color: #03c988;
+  --button-outline-hover-bg-color: #1c82ad;
+  --button-outline-hover-color: #03c988;
+
+  // variant: danger
+  --button-danger-color: #03c988;
+  --button-danger-bg-color: #1c82ad;
+  --button-danger-hover-bg-color: #1c82ad;
+  --button-danger-hover-color: #03c988;
+
+  // variant: success
+  --button-success-color: #03c988;
+  --button-success-bg-color: #1c82ad;
+  --button-success-hover-bg-color: #1c82ad;
+  --button-success-hover-color: #03c988;
 }

@@ -12,13 +12,19 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'prettier',
     'plugin:i18next/recommended',
+    'plugin:storybook/recommended',
   ],
-  overrides: [],
+  overrides: [
+    {
+      files: ['**/src/**/*.test.{ts, tsx}'],
+    },
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
+    tsconfigRootDir: __dirname,
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: ['./tsconfig.json'],
@@ -45,5 +51,7 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/consistent-type-assertions': 'off',
+    'react/display-name': 'off',
   },
 }
