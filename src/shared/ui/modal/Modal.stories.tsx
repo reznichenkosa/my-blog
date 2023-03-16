@@ -26,4 +26,4 @@ Dark.args = {
   isOpen: true,
   container: 'root',
 }
-Dark.decorators = [ThemeDecorator('dark')]
+// Dark.decorators = [ThemeDecorator('dark')]
