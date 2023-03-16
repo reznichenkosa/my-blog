@@ -3,5 +3,6 @@
   "notFoundPage": "Страница не найдена",
   "somethingWentWrong": "Что то пошло не так!",
   "reloadPage": "Перезагрузить страницу",
-  "aboutLink": "О нас"
+  "aboutLink": "О нас",
+  "signIn": "Войти"
 }

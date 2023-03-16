@@ -1,5 +1,4 @@
 import { addDecorator } from '@storybook/react'
-import { ThemeDecorator } from '../../src/shared/config/storybook/theme-decorator/ThemeDecorator'
 import { StyleDecorator } from '../../src/shared/config/storybook/style-decorator/StyleDecorator'
 import { RouterDecorator } from 'shared/config/storybook/router-decorator/RouterDecorator'
 import 'loki/configure-react'
@@ -14,6 +13,6 @@ export const parameters = {
   },
 }
 
-addDecorator(ThemeDecorator('light'))
+// addDecorator(ThemeDecorator('lights'))
 addDecorator(StyleDecorator)
 addDecorator(RouterDecorator)

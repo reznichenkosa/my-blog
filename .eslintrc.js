@@ -53,5 +53,8 @@ module.exports = {
     '@typescript-eslint/no-misused-promises': 'off',
     '@typescript-eslint/consistent-type-assertions': 'off',
     'react/display-name': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off', // delete after
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
 }

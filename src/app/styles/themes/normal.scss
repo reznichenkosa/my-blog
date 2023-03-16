@@ -1,4 +1,4 @@
-.app.light {
+.light {
   --bg-color: #effffb;
   --inverted-bg-color: #13005a;
   --other-color: #272727;
@@ -7,6 +7,10 @@
   --font-color: #03c988;
 
   // ui-kit color
+
+  // Modal
+
+  --modal-overlay-bg-color: rgba(0 0 0 / 60%);
 
   // AppLink
   --link-color: #03c988;

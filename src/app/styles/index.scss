@@ -4,11 +4,15 @@
 @import './themes/normal';
 @import './themes/dark';
 
-.app {
+body {
   min-height: 100vh;
   font: var(--font-m);
   color: var(--font-color);
   background: var(--bg-color);
+}
+
+.app {
+  min-height: 100vh;
 }
 
 .content-page {

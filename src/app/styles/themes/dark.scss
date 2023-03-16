@@ -1,4 +1,4 @@
-.app.dark {
+.dark {
   --bg-color: #13005a;
   --inverted-bg-color: #effffb;
   --primary-color: #03c988;
@@ -7,6 +7,10 @@
   --font-color: #03c988;
 
   // ui-kit color
+
+  // Modal
+
+  --modal-overlay-bg-color: rgba(0 0 0 / 60%);
 
   // AppLink
 
