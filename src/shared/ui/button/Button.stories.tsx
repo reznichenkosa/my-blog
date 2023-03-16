@@ -17,6 +17,7 @@ Primary.args = {
   variant: 'primary',
   children: 'Button text',
 }
+Primary.decorators = [ThemeDecorator('light')]
 
 export const PrimaryDark = Template.bind({})
 PrimaryDark.args = {
@@ -30,6 +31,7 @@ Ghost.args = {
   variant: 'ghost',
   children: 'Button text',
 }
+Ghost.decorators = [ThemeDecorator('light')]
 
 export const GhostDark = Template.bind({})
 GhostDark.args = {
@@ -43,6 +45,7 @@ Success.args = {
   variant: 'success',
   children: 'Button text',
 }
+Success.decorators = [ThemeDecorator('light')]
 
 export const SuccessDark = Template.bind({})
 SuccessDark.args = {
@@ -56,6 +59,7 @@ Danger.args = {
   variant: 'danger',
   children: 'Button text',
 }
+Danger.decorators = [ThemeDecorator('light')]
 
 export const DangerDark = Template.bind({})
 DangerDark.args = {
@@ -69,6 +73,7 @@ Outline.args = {
   variant: 'outline',
   children: 'Button text',
 }
+Outline.decorators = [ThemeDecorator('light')]
 
 export const OutlineDark = Template.bind({})
 OutlineDark.args = {

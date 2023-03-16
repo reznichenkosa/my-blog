@@ -1,21 +1,27 @@
 import { type ComponentStory, type ComponentMeta } from '@storybook/react'
 import { ThemeDecorator } from 'shared/config/storybook/theme-decorator/ThemeDecorator'
-import { AppError } from './AppError'
+import { Modal } from './Modal'
 
 export default {
-  title: 'shared/AppError',
-  component: AppError,
+  title: 'shared/Modal',
+  component: Modal,
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof AppError>
+} as ComponentMeta<typeof Modal>
 
-const Template: ComponentStory<typeof AppError> = (args) => <AppError {...args} />
+const Template: ComponentStory<typeof Modal> = (args) => <Modal {...args} />
 
 export const Light = Template.bind({})
-Light.args = {}
+Light.args = {
+  children: 'Lorem ipsum',
+  isOpen: true,
+}
 Light.decorators = [ThemeDecorator('light')]
 
 export const Dark = Template.bind({})
-Dark.args = {}
+Dark.args = {
+  children: 'Lorem ipsum',
+  isOpen: true,
+}
 Dark.decorators = [ThemeDecorator('dark')]

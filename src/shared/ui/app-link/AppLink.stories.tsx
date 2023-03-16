@@ -16,6 +16,7 @@ export const Light = Template.bind({})
 Light.args = {
   children: 'Test link',
 }
+Light.decorators = [ThemeDecorator('light')]
 
 export const Dark = Template.bind({})
 Dark.args = {

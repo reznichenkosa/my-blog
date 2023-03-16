@@ -1,10 +1,22 @@
-import { type FC, type PropsWithChildren, useState } from 'react'
+import { type FC, type PropsWithChildren, useState, useEffect } from 'react'
 import { LOCAL_STORAGE_THEME_KEY, type Theme, ThemeContext } from 'shared/contexts/theme-context'
 
 const defaultTheme = (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || 'light'
 
-export const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>(defaultTheme)
+interface ThemeProviderProps {
+  initialTheme?: Theme
+}
+
+export const ThemeProvider: FC<PropsWithChildren<ThemeProviderProps>> = ({
+  children,
+  initialTheme,
+}) => {
+  const [theme, setTheme] = useState<Theme>(initialTheme ?? defaultTheme)
+
+  useEffect(() => {
+    document.body.className = theme
+  }, [theme])
+
   const setNewTheme = (newTheme: Theme): void => {
     setTheme(newTheme)
   }
