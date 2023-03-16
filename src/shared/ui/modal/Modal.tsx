@@ -7,12 +7,20 @@ import styles from './Modal.module.scss'
 interface ModalProps {
   isOpen: boolean
   onClose: () => void
+  container?: 'root' | 'body'
 }
 
-export const Modal: FC<PropsWithChildren<ModalProps>> = ({ children, isOpen, onClose }) => {
+export const Modal: FC<PropsWithChildren<ModalProps>> = ({
+  children,
+  isOpen,
+  onClose,
+  container = 'body',
+}) => {
   const onContentClick = (e: MouseEvent): void => {
     e.stopPropagation()
   }
+
+  const containerElement = container === 'body' ? document.body : document.getElementById('root')
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent): void => {
@@ -29,7 +37,7 @@ export const Modal: FC<PropsWithChildren<ModalProps>> = ({ children, isOpen, onC
   }, [isOpen, onClose])
 
   return (
-    <Portal>
+    <Portal container={containerElement ?? document.body}>
       <div className={cn(styles.wrapper, { [styles.opened]: isOpen })}>
         <div className={styles.overlay} onClick={onClose}>
           <div className={styles.content} onClick={onContentClick}>
