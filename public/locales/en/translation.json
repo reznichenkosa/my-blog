@@ -4,5 +4,8 @@
   "somethingWentWrong": "Something went wrong!",
   "reloadPage": "Reload page",
   "aboutLink": "About us",
-  "signIn": "Sign in"
+  "signIn": "Sign in",
+  "counter": "Counter",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }
