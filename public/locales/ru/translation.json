@@ -4,5 +4,8 @@
   "somethingWentWrong": "Что то пошло не так!",
   "reloadPage": "Перезагрузить страницу",
   "aboutLink": "О нас",
-  "signIn": "Войти"
+  "signIn": "Войти",
+  "counter": "Cчетчик",
+  "increment": "Прибавить",
+  "decrement": "Убавить"
 }
