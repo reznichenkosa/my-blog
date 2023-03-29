@@ -1,9 +1,9 @@
 import cn from 'classnames'
 import styles from './Navbar.module.scss'
 import { useCallback, useState, type FC } from 'react'
-import { Modal } from 'shared/ui/modal'
 import { Button } from 'shared/ui/button'
 import { useTranslation } from 'react-i18next'
+import { LoginModal } from 'features/auth-by-username'
 
 export const Navbar: FC = () => {
   const [isOpenAuthModal, setIsOpenAuthModal] = useState(false)
@@ -17,9 +17,7 @@ export const Navbar: FC = () => {
       <Button variant='outline' onClick={onToggleAuthModal}>
         {t('signIn')}
       </Button>
-      <Modal isOpen={isOpenAuthModal} onClose={onToggleAuthModal}>
-        {t('signIn')}
-      </Modal>
+      <LoginModal isOpen={isOpenAuthModal} onClose={onToggleAuthModal} />
     </div>
   )
 }
