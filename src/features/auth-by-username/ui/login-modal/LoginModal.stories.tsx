@@ -23,12 +23,12 @@ Light.decorators = [
   StoreDecorator({ authForm: { username: 'Test', password: '1234' } }),
 ]
 
-export const Dark = Template.bind({})
-Dark.args = {
-  isOpen: true,
-  container: 'root',
-}
-Dark.decorators = [
-  // ThemeDecorator('dark'),
-  StoreDecorator({ authForm: { username: 'Test', password: '1234' } }),
-]
+// export const Dark = Template.bind({})
+// Dark.args = {
+//   isOpen: true,
+//   container: 'root',
+// }
+// Dark.decorators = [
+//   // ThemeDecorator('dark'),
+//   StoreDecorator({ authForm: { username: 'Test', password: '1234' } }),
+// ]
