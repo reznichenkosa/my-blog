@@ -7,5 +7,7 @@
   "signIn": "Войти",
   "counter": "Cчетчик",
   "increment": "Прибавить",
-  "decrement": "Убавить"
+  "decrement": "Убавить",
+  "login": "Логин",
+  "password": "Пароль"
 }

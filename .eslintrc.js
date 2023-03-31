@@ -56,5 +56,6 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 'off', // delete after
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
+    'react/prop-types': 'off',
   },
 }

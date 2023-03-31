@@ -1,0 +1,19 @@
+.wrapper {
+  .title {
+    font: var(--font-l);
+    color: var(--primary-color);
+  }
+
+  .title.error {
+    color: var(--text-danger-title-color);
+  }
+
+  .text {
+    font: var(--font-m);
+    color: var(--secondary-color);
+  }
+
+  .text.error {
+    color: var(--text-danger-text-color);
+  }
+}
