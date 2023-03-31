@@ -1,5 +1,5 @@
 import { addDecorator } from '@storybook/react'
-import { StyleDecorator } from '../../src/shared/config/storybook/style-decorator/StyleDecorator'
+import { StyleDecorator } from 'shared/config/storybook/style-decorator/StyleDecorator'
 import { RouterDecorator } from 'shared/config/storybook/router-decorator/RouterDecorator'
 import 'loki/configure-react'
 

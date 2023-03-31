@@ -8,6 +8,7 @@ import {
 import { type ToolkitStore } from '@reduxjs/toolkit/dist/configureStore'
 import { counterReducer } from 'entities/counter'
 import { userReducer } from 'entities/user'
+import { authReducer } from 'features/auth-by-username'
 
 export function createReduxStore(
   initialState?: StateSchema,
@@ -15,6 +16,7 @@ export function createReduxStore(
   const rootReducers: ReducersMapObject<StateSchema> = {
     counter: counterReducer,
     user: userReducer,
+    authForm: authReducer,
   }
 
   return configureStore<StateSchema>({

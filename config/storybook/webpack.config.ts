@@ -1,5 +1,5 @@
 import { type BuildPaths } from './../build/types/config'
-import { type Configuration } from 'webpack'
+import { DefinePlugin, type Configuration } from 'webpack'
 import path from 'path'
 import { buildCssLoader } from '../build/loaders/buildCssLoader'
 import { buildSvgLoader } from '../build/loaders/buildSvgLoader'
@@ -26,6 +26,10 @@ export default ({ config }: { config: Configuration }): Configuration => {
 
   config.module?.rules?.push(buildCssLoader(true))
   config.module?.rules?.push(buildSvgLoader())
-
+  config.plugins?.push(
+    new DefinePlugin({
+      IS_DEV: true,
+    }),
+  )
   return config
 }
