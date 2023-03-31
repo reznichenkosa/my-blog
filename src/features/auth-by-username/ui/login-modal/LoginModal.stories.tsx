@@ -29,6 +29,6 @@ Dark.args = {
   container: 'root',
 }
 Dark.decorators = [
-  ThemeDecorator('dark'),
+  // ThemeDecorator('dark'),
   StoreDecorator({ authForm: { username: 'Test', password: '1234' } }),
 ]
